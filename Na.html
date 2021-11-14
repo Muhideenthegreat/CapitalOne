@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinrin-yoku</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+  
+
+</head>
+
+<body>
+  <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>S</span>hin</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#book">Park now</a>
+        <a href="#packages">Famous Parks</a>
+        <a href="#services">services</a>
+        <a href="#gallery">Activities</a>
+        
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+<style>
+#map {
+  height: 350px;
+  position: relative;
+  width: 100%;
+}
+
+</style>
+<div id="map"></div>
+
+<script>
+var NPMap = {
+  center: {
+    lat: 44.599,
+    lng: -110.554
+  },
+  div: 'map',
+  overlays: [{
+    attribution: 'NPMap Team',
+    popup: {
+      title: '{{Description}}'
+    },
+    tooltip: '{{Name}}',
+    type: 'geojson',
+    url: 'https://www.nps.gov/lib/npmap.js/4.0.0/examples/data/rectangle.geojson'
+  }, {
+    attribution: 'NPMap Team',
+    styles: {
+      'fill': '#d39800',
+      'fill-opacity': 0.2,
+      'stroke': '#d39800',
+      'stroke-opacity': 0.8,
+      'stroke-width': 3
+    },
+    table: 'parks',
+    tooltip: 'Alpha code: {{unit_code}}',
+    type: 'cartodb',
+    user: 'nps'
+  }, {
+    attribution: 'Land Resources Division',
+    popup: {
+      description: 'The alpha code is {{Code}}.',
+      title: '{{Name}}'
+    },
+    styles: {
+      point: {
+        'marker-color': '#609321',
+        'marker-symbol': 'park'
+      }
+    },
+    tooltip: 'Center point for {{Code}}',
+    type: 'geojson',
+    url: 'https://www.nps.gov/lib/npmap.js/4.0.0/examples/data/national-parks.geojson'
+  }],
+  zoom: 6
+};
+
+(function () {
+  var s = document.createElement('script');
+  s.src = 'https://www.nps.gov/lib/npmap.js/4.0.0/npmap-bootstrap.js';
+  document.body.appendChild(s);
+})();
+
+</script>
+
+<h1>
+  Grand Canyon Park
+</h1>
+
+<p></p>
+</body>

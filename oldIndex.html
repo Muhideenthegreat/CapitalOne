@@ -28,11 +28,11 @@
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#book">Park now</a>
-        <a href="#packages">Famous Parks</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
         <a href="#services">services</a>
-        <a href="#gallery">Activities</a>
-        
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -49,8 +49,6 @@
 </header>
 
 <!-- header section ends -->
-<!--content>-->
-
 
 <!-- login form container  -->
 
@@ -77,14 +75,16 @@
 
     <div class="content">
         <h3>adventure is worthwhile</h3>
-        <p>dicover new parks with us, a step towards the post-pandemic era</p>
-        <a href="#book" class="btn">discover more</a>
+        <p>dicover new places with us, adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
     </div>
 
     <div class="controls">
         <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
         <span class="vid-btn" data-src="images/vid-3.mp4"></span>
         <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
     </div>
 
     <div class="video-container">
@@ -100,106 +100,40 @@
 <section class="book" id="book">
 
     <h1 class="heading">
-        <span>P</span>
-        <span>A</span>
-        <span>R</span>
-        <span>K</span>
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
         <span class="space"></span>
-        <span>N</span>
-        <span>O</span>
-        <span>W</span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
     </h1>
 
     <div class="row">
 
         <div class="image">
-            <main class="container" id="content" style="padding-bottom:35px;">
-      <!--<style>
-        #map {
-          height: 350px;
-          position: relative;
-          width: 100%;
-        }
-      </style>
-<div id="map"></div>
-
-<script>
-var NPMap = {
-  center: {
-    lat: 44.599,
-    lng: -110.554
-  },
-  baseLayers: [
-    'nps-parkTiles3',
-    'nps-parkTiles3Imagery'
-  ],
-  div: 'map',
-  hashControl: true,
-  overlays: [{
-    preset: 'nps-places-pois',
-    unitCodes: [
-      'yell'
-    ]
-  }],
-  zoom: 9
-};
-
-(function () {
-  var s = document.createElement('script');
-  s.src = 'https://www.nps.gov/lib/npmap.js/4.0.0/npmap-bootstrap.js';
-  document.body.appendChild(s);
-})();
-
-</script> -->
-
-<style>
-#map {
-  height: 350px;
-  position: relative;
-  width: 100%;
-}
-
-</style>
-<div id="map"></div>
-
-<script>
-var NPMap = {
-  div: 'map'
-};
-
-(function () {
-  var s = document.createElement('script');
-  s.src = 'https://www.nps.gov/lib/npmap.js/4.0.0/npmap-bootstrap.js';
-  document.body.appendChild(s);
-})();
-
-</script>
-
-    </main>
-   
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
-    <script src="https://platform.twitter.com/widgets.js"></script>
+            <img src="images/book-img.svg" alt="">
         </div>
 
         <form action="">
             <div class="inputBox">
-                <h3>Location:</h3>
-                <input type="text" placeholder="">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
             </div>
             <div class="inputBox">
-                <h3>Health issues:</h3>
-                <input type="text" placeholder="">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
             </div>
             <div class="inputBox">
-                <h3>Birthday</h3>
+                <h3>arrivals</h3>
                 <input type="date">
             </div>
             <div class="inputBox">
-                <h3>Planned Visitation date</h3>
+                <h3>leaving</h3>
                 <input type="date">
             </div>
-            <input type="submit" class="btn" value="Find a Park">
+            <input type="submit" class="btn" value="book now">
         </form>
 
     </div>
@@ -213,14 +147,15 @@ var NPMap = {
 <section class="packages" id="packages">
 
     <h1 class="heading">
-      
+      <span>W</span> <span>O</span>  <span>R</span>  <span>L</span>  <span>D</span>
+        <span>-</span> 
         <span>F</span>
         <span>A</span>
         <span>M</span>
         <span>O</span>
         <span>U</span>
         <span>S</span>
-        <span class="space"></span>
+        <span>-</span>
         <span>P</span>
         <span>A</span>
         <span>R</span>
@@ -232,7 +167,7 @@ var NPMap = {
     <div class="box-container">
 
         <div class="box">
-            <img src="images/grandcayon.jpg" alt="">
+            <img src="images/p-1.jpg" alt="">
             <div class="content">
                 <h3> <i class="fas fa-map-marker-alt"></i> Northern Arizona </h3>
                 <p>Grand Canyon National Park</p>
@@ -244,15 +179,15 @@ var NPMap = {
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> $90.00  </div>
-                <a href="https://www.nps.gov/thingstodo/yell-grand-canyon-of-the-yellowstone.htm" class="btn">book now</a>
+                <a href="#" class="btn">book now</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="images/yellowstone.jpg" alt="">
+            <img src="images/p-2.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Wyoming & Montana </h3>
-                <p>YellowStone National Park</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Nepal </h3>
+                <p>Chitwan National Park</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -266,10 +201,10 @@ var NPMap = {
         </div>
 
         <div class="box">
-            <img src="images/yosemite.jpg" alt="">
+            <img src="images/p-3.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> California </h3>
-                <p>Yosemite National Park</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Japan </h3>
+                <p>Fuji Hakone Izu National Park</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -283,10 +218,10 @@ var NPMap = {
         </div>
 
         <div class="box">
-            <img src="images/arches.jpg" alt="">
+            <img src="images/p-4.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Eastern Utah</h3>
-                <p>Arches National Park</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Tanzania</h3>
+                <p>Serengeti National Park</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -299,7 +234,7 @@ var NPMap = {
             </div>
         </div>
 
-        <!--<div class="box">
+        <div class="box">
             <img src="images/p-5.jpg" alt="">
             <div class="content">
                 <h3> <i class="fas fa-map-marker-alt"></i> South Africa </h3>
@@ -331,7 +266,7 @@ var NPMap = {
                 <div class="price"> $20</div>
                 <a href="#" class="btn">book now</a>
             </div>
-        </div>-->
+        </div>
 
     </div>
 
@@ -344,44 +279,48 @@ var NPMap = {
 <section class="services" id="services">
 
     <h1 class="heading">
-        <span>b</span>
-        <span>e</span>
-        <span>n</span>
-        <span>e</span>
-        <span>f</span>
-        <span>i</span>
-        <span>t</span>
         <span>s</span>
-        <span class="space"></span>
-        <span>o</span> <span>f</span>
-        <span class="space"></span>
-        <span>p</span> <span>a</span> <span>r</span> <span>k</span>
-
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
     </h1>
 
     <div class="box-container">
 
         <div class="box">
-            <i class="fas fa-chart-line"></i>
-            <h3>Physical Activity</h3>
-            <p>Physical activity is a major combatant against the epidemic of obesity. Whether it is active recreation pursuits like athletic leagues, fitness and dance programs, trails and active amenities like playgrounds and pools, our parks provide natural locations for organized physical activities, as well as unstructured spaces that overtly or subtlety encourage physical activity. </p>
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Live in convenience as you explore the around the world, have the best views of the environment with security</p>
         </div>
         <div class="box">
-            <i class="fas fa-spa"></i>
-            <h3>Lessing of Anxiety</h3>
-            <p>Visiting parks tends to lower anxiety in mentally stressed people. It stands out as one of the best place to get back into the right state of mind.</p>
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
         </div>
         <div class="box">
-            <i class="fas fa-network-wired"></i>
-            <h3>Providing Connection Space</h3>
-            <p>With the internet’s prevalence, it’s become more common to go from work to home without changing up the routine. Parks give individuals a space for meeting their neighbors in person.</p>
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety Guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
         </div>
         <div class="box">
-            <i class="fas fa-child"></i>
-            <h3>Child Development</h3>
-            <p>When kids get to play outside instead of indoors, it increases the positive impact of physical activity. Kids who spend time outside have better test scores and better cognitive functions</p>
+            <i class="fas fa-globe-asia"></i>
+            <h3>Around the World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
         </div>
-        
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Fastest Travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
 
     </div>
 
@@ -409,59 +348,75 @@ var NPMap = {
     <div class="box-container">
 
         <div class="box">
-            <img src="images/hiking.jpg" alt="">
+            <img src="images/g-1.jpg" alt="">
             <div class="content">
                 <h3>Hiking</h3>
-                <a href="#" class="btn">see parks</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/hideandseek.jpg" alt="">
+            <img src="images/g-2.jpg" alt="">
             <div class="content">
                 <h3>Hide and Seek</h3>
-                <a href="#" class="btn">see parks</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/camping.jpg" alt="">
+            <img src="images/g-3.jpg" alt="">
             <div class="content">
-                <h3>Camping</h3>
-                <a href="#" class="btn">see parks</a>
+                <h3>Badminton</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/fishing.jpg" alt="">
+            <img src="images/g-4.jpg" alt="">
             <div class="content">
-                <h3>Fishing</h3>
-                <a href="#" class="btn">see parks</a>
+                <h3>Outside Bowling</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/skiing.jpg" alt="">
+            <img src="images/g-5.jpg" alt="">
             <div class="content">
-                <h3>Skiing</h3>
-                <a href="#" class="btn">see parks</a>
+                <h3>Scavenger Hunt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/bughunt.jpg" alt="">
+            <img src="images/g-6.jpg" alt="">
             <div class="content">
-                <h3>Bug hunts</h3>
-                <a href="#" class="btn">see parks</a>
+                <h3>Tug of War</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/soccer.jpg" alt="">
+            <img src="images/g-7.jpg" alt="">
             <div class="content">
                 <h3>Soccer</h3>
-                <a href="#" class="btn">see parks</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/picnic.jpg" alt="">
+            <img src="images/g-8.jpg" alt="">
             <div class="content">
-                <h3>Picnic</h3>
-                <a href="#" class="btn">see parks</a>
+                <h3>Capture the Flag</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>Hill Climbing </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
             </div>
         </div>
 
@@ -473,7 +428,85 @@ var NPMap = {
 
 <!-- review section starts  -->
 
+<section class="review" id="review">
 
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
 
 <!-- contact section starts  -->
 
@@ -537,16 +570,24 @@ var NPMap = {
     <div class="box-container">
 
         <div class="box">
-            <h3> locations</h3>
-            <a href="#">Lincoln Univerity, PA</a>
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
         </div>
         <div class="box">
             <h3>quick links</h3>
             <a href="#">home</a>
-            <a href="#">Park Now</a>
-            <a href="#">Famous Parks</a>
-            <a href="#">Benefits</a>
-            <a href="#">Activities</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
             <a href="#">contact</a>
         </div>
         <div class="box">
@@ -559,7 +600,7 @@ var NPMap = {
 
     </div>
 
-    <h1 class="credit"> created by <span> Muhideen Mustapha </span> | all rights reserved! </h1>
+    <h1 class="credit"> created by <span> mr. web designer </span> | all rights reserved! </h1>
 
 </section>
 
